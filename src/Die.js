@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiceOne } from '@fortawesome/free-solid-svg-icons';
 import React, { Component } from 'react';
+import './Die.css';
 
 class Die extends Component {
     render() {
+        let cls = `Die fas fa-dice-${this.props.face}`;
         return (
-            <FontAwesomeIcon icon="fa-solid fa-dice-one" />
+            <i className={cls} />
         )
     }
 }
